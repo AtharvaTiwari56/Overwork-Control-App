@@ -72,18 +72,18 @@ function draw() {
     morecontent5.html("set a timer so that you work in limit, and also check");
     morecontent6.html("some exercise/meditation tips when you want to have some");
     morecontent7.html(" 'me-time'!");
-    morecontent7.position(displayWidth/2 - 125, displayHeight/2 - 20);
-    morecontent6.position(displayWidth/2 - 125, displayHeight/2 - 50);
-    morecontent5.position(displayWidth/2 - 125, displayHeight/2 - 80);
-    morecontent4.position(displayWidth/2 - 125, displayHeight/2 - 110);
-    morecontent3.position(displayWidth/2 - 125, displayHeight/2 - 140);
-    morecontent2.position(displayWidth/2 - 125, displayHeight/2 - 170);
-    morecontent1.position(displayWidth/2 - 125, displayHeight/2 - 200);
-    morecontent.position(displayWidth/2 - 125, displayHeight/2 - 230);
+    morecontent7.position(displayWidth/2 - 225, displayHeight/2 - 20);
+    morecontent6.position(displayWidth/2 - 225, displayHeight/2 - 50);
+    morecontent5.position(displayWidth/2 - 225, displayHeight/2 - 80);
+    morecontent4.position(displayWidth/2 - 225, displayHeight/2 - 110);
+    morecontent3.position(displayWidth/2 - 225, displayHeight/2 - 140);
+    morecontent2.position(displayWidth/2 - 225, displayHeight/2 - 170);
+    morecontent1.position(displayWidth/2 - 225, displayHeight/2 - 200);
+    morecontent.position(displayWidth/2 - 225, displayHeight/2 - 230);
     
-    title1.position(displayWidth/2, displayHeight/2 - 300);
-    button1.position(displayWidth/2 + 105, displayHeight/2 + 90);
-    button2.position(displayWidth/2 + 100 , displayHeight/2 + 40);
+    title1.position(displayWidth/2 - 100, displayHeight/2 - 300);
+    button1.position(displayWidth/2 + 5, displayHeight/2 + 90);
+    button2.position(displayWidth/2, displayHeight/2 + 40);
     button1.mousePressed(() => {
       gameState = "SecondScreen";
       button1.hide();
@@ -100,7 +100,7 @@ function draw() {
     })
     button2.mousePressed(() => {
       gameState = "TipScreen";
-      button3.position(displayWidth/2 - 125, displayHeight/2 - 320);
+      button3.position(displayWidth/2 -225, displayHeight/2 - 320);
       button2.hide();
       title1.hide();
       button1.hide();
@@ -116,7 +116,7 @@ function draw() {
   }
 
   else if(gameState === "SecondScreen") {
-    button3.position(displayWidth/2 - 125, displayHeight/2 - 320);
+    button3.position(displayWidth/2 - 225, displayHeight/2 - 320);
     title.show();
     button3.show();
     button3.mousePressed(() => {
@@ -137,10 +137,10 @@ function draw() {
     title1.hide();
     background("cyan");
     title.html("Enter a period of time in mins here, and an alarm will ring at the end of that period.");
-    title.position(displayWidth/2 - 100, displayHeight/2 - 150);
+    title.position(displayWidth/2 - 200, displayHeight/2 - 150);
    
-    input.position(displayWidth/2+ 70, displayHeight/2 - 80);
-    button.position(displayWidth/2 +70, displayHeight/2 - 40);
+    input.position(displayWidth/2- 30, displayHeight/2 - 80);
+    button.position(displayWidth/2 - 30, displayHeight/2 - 40);
     button.mousePressed(() => {
       gameState = "buttonPressed";
       button2.hide();
@@ -152,7 +152,7 @@ function draw() {
     )
   }
   else if(gameState === "buttonPressed") {
-    button3.position(displayWidth/2 - 125, displayHeight/2 - 320);
+    button3.position(displayWidth/2 - 225, displayHeight/2 - 320);
     background("cyan");
     content.show();
     content1.show();
@@ -163,9 +163,9 @@ function draw() {
     input.hide();
     button.hide();
     content.html("THANKS! You have set your timer and now, an ");
-    content.position(displayWidth/2 - 85, displayHeight/2 - 150);
+    content.position(displayWidth/2 - 185, displayHeight/2 - 150);
     content1.html("alarm will ring after the specified time is over. ");
-    content1.position(displayWidth/2 - 85, displayHeight/2 - 90);
+    content1.position(displayWidth/2 - 185, displayHeight/2 - 90);
    
   }
   else if(gameState === "TipScreen") {
@@ -215,39 +215,39 @@ function draw() {
     content21.show();
     morecontentchrome.show();
     morecontentchrome.html("Meditation tips");
-    morecontentchrome.position(displayWidth/2 + 50, displayHeight/2 - 330);
+    morecontentchrome.position(displayWidth/2 - 50, displayHeight/2 - 330);
     content4.html("1. Same time, same place. If you can’t meditate in the morning, try to make a ");
-    content4.position(displayWidth/2 - 130, displayHeight/2-300);
+    content4.position(displayWidth/2 - 230, displayHeight/2-300);
     content5.html("commitment to meditating at the same time and in the same place every day.");
-    content5.position(displayWidth/2 - 130, displayHeight/2 - 275);
+    content5.position(displayWidth/2 - 230, displayHeight/2 - 275);
     content6.html("2. Breathe naturally. Meditation does involve focusing on the breath and using it as ");
-    content6.position(displayWidth/2 - 130, displayHeight/2 - 225);
+    content6.position(displayWidth/2 - 230, displayHeight/2 - 225);
     content7.html("an anchor for the mind, but try not to think about the breath or alter it in any way");
-    content7.position(displayWidth/2 - 130, displayHeight/2 - 200);
+    content7.position(displayWidth/2 - 230, displayHeight/2 - 200);
     content8.html("3. Take a moment and check in with yourself. After each session, try to take a moment ");
     content9.html("to notice how you feel physically, emotionally, and mentally.");
-    content8.position(displayWidth/2 - 130, displayHeight/2 - 150);
-    content9.position(displayWidth/2 - 130, displayHeight/2 - 125);
+    content8.position(displayWidth/2 - 230, displayHeight/2 - 150);
+    content9.position(displayWidth/2 - 230, displayHeight/2 - 125);
     content10.html("4. Buddy up. Try to get a friend to start meditating, too. You don’t have to meditate at ");
-    content10.position(displayWidth/2 - 130, displayHeight/2 - 75);
+    content10.position(displayWidth/2 - 230, displayHeight/2 - 75);
     content11.html("the same time, but having someone who’s also looking to meditating regularly can help ");
-    content11.position(displayWidth/2 - 130, displayHeight/2 - 50);
+    content11.position(displayWidth/2 - 230, displayHeight/2 - 50);
     content12.html("motivate you toward establishing a consistent practice.");
-    content12.position(displayWidth/2 - 130, displayHeight/2 - 25);
+    content12.position(displayWidth/2 - 230, displayHeight/2 - 25);
     content13.html("Exercise tips");
-    content13.position(displayWidth/2 + 50, displayHeight/2 + 25);
+    content13.position(displayWidth/2 - 50, displayHeight/2 + 25);
     content14.html("Be aware of your body. Think about how the particular exercise is making you feel. ");
-    content14.position(displayWidth/2 - 130, displayHeight/2 + 75);
+    content14.position(displayWidth/2 - 230, displayHeight/2 + 75);
     content15.html("If something doesn’t feel right, stop immediately and seek medical advice");
-    content15.position(displayWidth/2 - 130, displayHeight/2 + 100);
+    content15.position(displayWidth/2 - 230, displayHeight/2 + 100);
     content16.html("Warm up and cool down. Try slow stretches and go through the motions of your sport ");
-    content16.position(displayWidth/2 - 130, displayHeight/2 + 150);
+    content16.position(displayWidth/2 - 230, displayHeight/2 + 150);
     content17.html("or activity before starting. Cool down with slow stretching.");
-    content17.position(displayWidth/2 - 130, displayHeight/2 + 175);
+    content17.position(displayWidth/2 - 230, displayHeight/2 + 175);
     content18.html("Stay hydrated. You can lose around one and a half litres of fluid for every hour of ");
-    content18.position(displayWidth/2 - 130, displayHeight/2 + 225);
+    content18.position(displayWidth/2 - 230, displayHeight/2 + 225);
     content19.html("exercise; so drink water before, during and after a session.");
-    content19.position(displayWidth/2 - 130, displayHeight/2 + 250);
+    content19.position(displayWidth/2 - 230, displayHeight/2 + 250);
   }
   
 }
