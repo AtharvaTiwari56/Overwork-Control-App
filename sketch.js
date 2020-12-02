@@ -1,4 +1,4 @@
-svar gameState, button, input, time, val, play1, title, img;
+var gameState, button, input, time, val, play1, title, img;
 
 function preload() {
   play1=loadSound("lol.mp3");
